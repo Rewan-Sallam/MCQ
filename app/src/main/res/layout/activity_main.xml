@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" E Exam "
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="35sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+/>
+
+    <TextView
+        android:id="@+id/best_score_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Best grade : 0 "
+        android:layout_above="@+id/start_quiz_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        />
+   <Button
+       android:id="@+id/start_quiz_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Start Quiz"
+       android:layout_centerInParent="true"
+     />
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/start_quiz_btn"
+        android:layout_alignLeft="@+id/start_quiz_btn"
+        android:layout_below="@+id/start_quiz_btn"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>
